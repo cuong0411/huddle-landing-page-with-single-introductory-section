@@ -46,24 +46,42 @@ body {
 }
 
 .social {
-  list-style: none;
+  list-style-type: none;
   grid-column: span 2;
   display: flex;
   justify-content: flex-end;
   gap: 10px;
 }
 
+.social a {
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  border: 1px solid #fff;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: var(--soft-magenta);
+  background-color: #fff;
+}
+
 .btn {
   margin-top: 18px;
-  padding: 16px 48px;
+  padding: 16px 60px;
   border: none;
   border-radius: 36px;
   background-color: var(--soft-magenta);
-  font-size: 18px;
+  font-size: 1.2em;
   color: #fff;
 
   /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
@@ -75,6 +93,7 @@ body {
 .header {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 1.8em;
 }
 
 .content {
